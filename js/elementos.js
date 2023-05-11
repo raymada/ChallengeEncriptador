@@ -16,6 +16,7 @@ function encriptar () {
     
     document.getElementById("sinMensaje").style.display = "none";
     document.getElementById("textoSinMensaje").style.display = "none";  
+    document.getElementById("txtRandom").style.display = "none"; 
     document.getElementById("txtEncriptado").innerHTML = textoCifrado;
  //fala agregar este boton de copiar   
     document.getElementById("copiar").style.display = "show";
