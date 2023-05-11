@@ -1,0 +1,181 @@
+header {
+    background-color: #e3dae7;
+    padding: 20px 0;
+}
+
+body{
+    background-color: #e3dae7;
+    font-family: 'Tajawal', sans-serif;
+}
+
+h1{
+    font-size: 3em;
+}
+
+h2{
+    font-size: 2em;
+}
+
+h3{
+    font-size: 1.5em;
+}
+
+h1,h2,h3,h4{
+    margin: 10px 0;
+}
+
+b{
+    font-weight: bolder;
+}
+
+.text-space{
+    margin: 20px 0;
+}
+
+.logo{
+    position: fixed;
+    top: 15px;
+    left: 15px;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: center;
+    max-width: 80%;
+    height: 90vh;
+}
+
+.col-1{
+    width: 70%;
+    margin-right: 15px;
+    display: flex;
+    align-content: flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.col-2{
+    width: 30%;
+}
+
+.ingreso-texto{
+    color: #714d69;
+    border: none;
+    max-height: 80%;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+}
+
+.requerimientos p{
+    font-size: .9em;
+    color: #999;
+    display: flex;
+    align-items: center;
+}
+
+.requerimientos img{
+    opacity: .5;
+
+}
+
+#encriptador{
+    border: none;
+    background: #ffffff21;
+    color: #714d69;
+    font-size: 30px;
+    padding: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    height: 90%;
+    min-height: 90%;
+}
+
+.resultados{
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 8px 10px #d1d1d1;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botones{
+    display: flex;
+}
+
+.button{
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;	
+    text-decoration: none;
+    outline: none;
+    border-radius: 15px; 
+    box-shadow: 0 9px #999;
+    margin: 10px 0px;
+    width: 100%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#encriptar{
+    color: #d3b3b8;
+    background-color: #714d69;
+    border: none;
+    margin-right: 20px;
+}
+
+#desencriptar{
+    color: #714d69;
+    background-color: #d3b3b8;
+    border-color: #714d69;
+    border-width: 1px;
+}
+
+.button:active{
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.texto-encriptado{
+    text-align: center;
+}
+
+#txtEncriptado{
+    background-color: none;
+    border: none;
+    color: #714d69;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+
+#copiar{
+    color: #714d69;
+    background-color: #e3dae7;
+    border: none;
+    margin-right: 20px;
+    
+}
+
+@media screen and (max-width:780px) {
+    .contenedor{
+        flex-direction: column;
+    }
+
+    .col-1, .col-2{
+        width: 100%;
+    }
+
+    .col-1{
+        margin: 100px 0 40px 0;
+    }
+
+    .botones{
+        flex-direction: column;
+    }
+}

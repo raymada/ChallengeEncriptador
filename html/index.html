@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8"> 
+        <title>Encriptador de texto</title>
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <script type="text/javascript" src="../js/elementos.js"></script>
+    </head>
+
+    <header>
+            <div class="logo">
+                <h1><img src="../img/logo.png"></h1>
+            </div>
+    </header>
+
+    <body>
+        <div class="contenedor">
+            <div class="col-1">
+                <div class="ingreso-texto">
+                    <label for="encriptador"></label>
+                    <textarea 
+                        id="encriptador" 
+                        name="encriptador"
+                        rows="15" 
+                        required>Ingrese el texto aquí
+                    </textarea>
+                    
+                </div>
+
+                <div class="requerimientos">
+                    <p> <img src="../icons/error.svg" width="20px" alt=""> Solo letras minúsculas y sin acentos</p>
+                </div>
+
+                <div class="botones">
+                    <input type="submit" class="button" id="encriptar" value="Encriptar" onclick=" encriptar ()">
+
+                    <input type="submit" class="button" id="desencriptar" value="Desencriptar" onclick="desencriptar ()">
+                </div>
+            </div>
+
+            <div class="col-2 resultados">
+                <div class="texto-encriptado">
+                    <img src="../img/notfound.png" id="sinMensaje" alt="">
+                    <h3 class="text-space" id="textoSinMensaje"><b>Ningún mensaje fue encontrado</b></h3>
+                    <p id="txtRandom">Ingresa el texto que desees encriptar o desencriptar</p>
+                    <textarea 
+                        id="txtEncriptado" 
+                        name="txtEncriptado"
+                        rows="15" 
+                        required>   
+                    </textarea>
+
+                    <input type="submit" class="button" id="copiar" value="Copiar" onclick="copiar()">
+                </div>
+                
+            </div>
+        </div>
+
+    </body>
+
+</html>
